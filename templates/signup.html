@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Signup</h1>
+    <form method="POST" action="/confirm" >
+        <label>Username</label>
+        <input type="text" name="Username">
+        <br>
+        <label>Password</label>
+        <input type="password" name="password">
+        <br>
+        <label>Verify password</label>
+        <input type="password" name="verify">
+        <br>
+        <label>Email (optional)</label>
+        <input type="text" name="email">
+        <br>
+        <input type='submit' value='Submit'>
+
+    </form>
+
+
+{% endblock %}
