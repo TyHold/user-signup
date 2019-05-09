@@ -3,18 +3,15 @@
 {% block content %}
 
     <h1>Signup</h1>
-    <form method="POST" action="/confirm" >
-        <label>Username</label>
-        <input type="text" name="Username">
+    <form method="POST" action="/">
+
+        <label>Username:<input type="text" name="username" value={{request.form['username']}}>{{username_err}}</label>
         <br>
-        <label>Password</label>
-        <input type="password" name="password">
+        <label>Password:<input type="password" name="password">{{password_err}}</label>
         <br>
-        <label>Verify password</label>
-        <input type="password" name="verify">
+        <label>Verify password:<input type="password" name="verify">{{verify_err}}</label>
         <br>
-        <label>Email (optional)</label>
-        <input type="text" name="email">
+        <label>Email (optional):<input type="text" name="email" value={{request.form['email']}}> {{email_err}}</label>
         <br>
         <input type='submit' value='Submit'>
 
