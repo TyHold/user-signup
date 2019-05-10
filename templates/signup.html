@@ -5,11 +5,11 @@
     <h1>Signup</h1>
     <form method="POST" action="/">
 
-        <label>Username:<input type="text" name="username" value={{request.form['username']}}>{{username_err}}</label>
+        <label>Username:<input type="text" name="username" value={{request.form['username']}}>  {{username_err}}</label>
         <br>
-        <label>Password:<input type="password" name="password">{{password_err}}</label>
+        <label>Password:<input type="password" name="password">  {{password_err}}</label>
         <br>
-        <label>Verify password:<input type="password" name="verify">{{verify_err}}</label>
+        <label>Verify password:<input type="password" name="verify">  {{verify_err}}</label>
         <br>
         <label>Email (optional):<input type="text" name="email" value={{request.form['email']}}> {{email_err}}</label>
         <br>
